@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8B1D05E-C3BB-4F43-8F3E-223EA22CB3F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PPE___Fredi</RootNamespace>
+    <AssemblyName>PPE - Fredi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Deplacements\AfficherDeplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deplacements\AfficherDeplacement.Designer.cs">
+      <DependentUpon>AfficherDeplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deplacements\AjouterDeplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deplacements\AjouterDeplacement.Designer.cs">
+      <DependentUpon>AjouterDeplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deplacements\ModifierDeplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deplacements\ModifierDeplacement.Designer.cs">
+      <DependentUpon>ModifierDeplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deplacements\SuppressionDeplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deplacements\SuppressionDeplacement.Designer.cs">
+      <DependentUpon>SuppressionDeplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licencies\AfficherLicencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencies\AfficherLicencies.Designer.cs">
+      <DependentUpon>AfficherLicencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licencies\AjouterLicencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencies\AjouterLicencies.Designer.cs">
+      <DependentUpon>AjouterLicencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licencies\ModifierLicencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencies\ModifierLicencies.Designer.cs">
+      <DependentUpon>ModifierLicencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licencies\SuppressionLicencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencies\SuppressionLicencies.Designer.cs">
+      <DependentUpon>SuppressionLicencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoteDeFrais\EditerLesJustificatifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteDeFrais\EditerLesJustificatifs.Designer.cs">
+      <DependentUpon>EditerLesJustificatifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoteDeFrais\GestionDesRemboursements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteDeFrais\GestionDesRemboursements.Designer.cs">
+      <DependentUpon>GestionDesRemboursements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametres\Parametres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametres\Parametres.Designer.cs">
+      <DependentUpon>Parametres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Deplacements\AfficherDeplacement.resx">
+      <DependentUpon>AfficherDeplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deplacements\AjouterDeplacement.resx">
+      <DependentUpon>AjouterDeplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deplacements\ModifierDeplacement.resx">
+      <DependentUpon>ModifierDeplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deplacements\SuppressionDeplacement.resx">
+      <DependentUpon>SuppressionDeplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencies\AfficherLicencies.resx">
+      <DependentUpon>AfficherLicencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencies\AjouterLicencies.resx">
+      <DependentUpon>AjouterLicencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencies\ModifierLicencies.resx">
+      <DependentUpon>ModifierLicencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencies\SuppressionLicencies.resx">
+      <DependentUpon>SuppressionLicencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteDeFrais\EditerLesJustificatifs.resx">
+      <DependentUpon>EditerLesJustificatifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteDeFrais\GestionDesRemboursements.resx">
+      <DependentUpon>GestionDesRemboursements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametres\Parametres.resx">
+      <DependentUpon>Parametres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
